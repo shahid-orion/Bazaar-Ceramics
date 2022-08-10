@@ -1,0 +1,92 @@
+header{
+    background-color: #C81848;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+}
+#main{
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+nav{
+    float: left;
+}
+#container{
+    width: 85%;
+    /* padding-left: 340px; */
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: mintcream;
+    /* position: relative; */
+}
+
+section{
+    background-color:  #e6ffff
+    ;
+}
+
+table{
+    border-spacing: 5px;
+    border-collapse: collapse;
+    width: 60%;
+    height: 100px;
+}
+tr img{
+    display: block;}
+td {
+    padding: 0px;
+}
+img {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+#formTable tr{
+    border: 1px solid black;
+}
+#formTable td{
+    padding: 5px;
+}
+form{
+    padding-left: 50px;
+}
+h2{
+    text-align: center;
+}
+#submitButton{
+    float: right;
+}
+#orderConfirmation {
+    margin: 50px;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#formTable{
+    /* margin-left: 200px; */
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: #FFA07A;
+    position: relative;
+    height: 50px;
+}
+
+footer #closeButton{
+    width: 200px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

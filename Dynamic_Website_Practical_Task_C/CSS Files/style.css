@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.product-item {
+  padding: 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.product-item > div {
+  text-align: center;
+  padding: 1rem;
+  border: 2px solid green;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.product-item > div:hover {
+  background-image: linear-gradient(45deg, orange, orangered);
+  border: none;
+}
+
+.product-item > div > div > img {
+  border-radius: 1rem;
+  min-height: 15rem;
+  width: 90%;
+}
+
+.product-item > div > h5 {
+  padding-top: 1rem;
+}

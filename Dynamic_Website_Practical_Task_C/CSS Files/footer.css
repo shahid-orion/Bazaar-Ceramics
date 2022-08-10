@@ -1,0 +1,55 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    background: lightblue;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  
+  .footer > div > ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer > div:nth-child(3) > div {
+    display: flex;
+  }
+  
+  .footer > div:nth-child(3) > div > a {
+    padding-right: 1rem;
+  }
+  
+  .footer > div:nth-child(3) > div > a > i {
+    font-size: 2rem;
+  }
+  
+  .footer > div:nth-child(4) > input {
+    outline: none;
+    padding: 1rem 3rem 1rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    background: lightgreen;
+    color: #000;
+  }
+  
+  .footer > div:nth-child(4) > input:hover {
+    border: 2px solid green;
+    background: transparent;
+  }
+  
+  .footer > div:nth-child(4) > button {
+    color: #fff;
+    background: orangered;
+    padding: 0.7rem 2rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    outline: none;
+  }
+  
+  .footer > div:nth-child(4) > button:hover {
+    background: transparent;
+    border: 2px solid green;
+    color: #000;
+  }

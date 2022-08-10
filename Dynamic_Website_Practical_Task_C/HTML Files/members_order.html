@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members Order</title>
+    <link rel="stylesheet" href="../CSS Files/order_style.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- contain all data except footer-->
+        <header>
+            <!-- Header-->
+            <h1 id="productTitle"></h1>
+        </header>
+
+        <div id="container">
+            <!--contains images-->
+
+        </div>
+        <br>
+        <br>
+        <section>
+            <!-- contains order form-->
+            <form action="" id="thisForm" name="thisForm" method="POST">
+                <h2>Item Order Form</h2>
+                <div id="formTable">
+                    <table border="1">
+                        <tbody>
+                            <tr>
+                                <!--row for product name-->
+                                <td>Product Name</td>
+                                <td colspan="1">
+                                    <input type="text" name="thisName" id="thisName" required readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!--row for order quantity-->
+                                <td>Quantity</td>
+                                <td colspan="1">
+                                    <input type="text" value="1" name="thisQuantity" id="thisQuantity" maxlength="7"
+                                        minlength="0" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!--row for price per unit -->
+                                <td>Unit Price</td>
+                                <td colspan="1">
+                                    <input type="text" name="thisPrice" id="thisPrice" required readonly>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- row for total price-->
+                                <td>Order Total</td>
+                                <td colspan="1">
+                                    <label id="totalPrice"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- button for resetting the order-->
+                                    <button type="button" name="resetButton" id="resetButton" value="reset"
+                                        onclick="resetInputs()">clear</button>
+                                </td>
+                                <td>
+                                    <button type="button" name="totalButton" id="totalButton"
+                                        value="Total">Total</button>
+                                    <!--button for calculating total-->
+
+                                    <button type="submit" name="submitButton" id="submitButton" value="submit"
+                                        onsubmit="checkForm()">Submit</button>
+                                    <!--button for submitting the order-->
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </form> <!-- confirmation table-->
+            <div style="display: none;" id="orderConfirmation">
+                <div id="confirmBox"></div>
+                <p>Confirm order?</p>
+                <button id="orderYes">Yes</button> <!-- yes button will confirm the finam submission-->
+                <button id="orderNo">No</button> <!-- no button will seset the order-->
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <button id="closeButton" onclick="closeWindow()">Close This Page</button>
+        <!--closing the window-->
+    </footer>
+
+    <script src="../scripts/scripts_order.js"></script>
+</body>
+
+</html>

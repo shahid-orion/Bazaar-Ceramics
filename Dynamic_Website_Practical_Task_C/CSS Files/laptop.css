@@ -1,0 +1,22 @@
+@media (min-width: 801px) {
+  .logo {
+    max-width: 100%;
+    padding: 10px 0;
+  }
+  .width-30 {
+    display: inline-block;
+    width: 30%;
+  }
+  .width-70 {
+    display: inline-block;
+    width: 65%;
+    padding-left: 3%;
+    vertical-align: top;
+  }
+  .mobile {
+    display: none;
+  }
+  .tablet-desktop {
+    display: block;
+  }
+}
